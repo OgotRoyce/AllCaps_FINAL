@@ -224,12 +224,19 @@
         font-size: 14px;
         color: #999;
         margin-top: 1 px;
+        margin-bottom: 0px;
+    }
+
+    .project-subtitle-2 {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 10px;
     }
 
     .adviser-subtitle {
         font-size: 14px;
         color: #999;
-        margin-top: 1 px;
+        margin-top: 10 px;
     }
 </style>
 
@@ -309,8 +316,8 @@
                                         <div class="project-subtitle">
                                             <p>{{ $project->description }}</p>
                                         </div>
-                                        <div class="project-subtitle">  
-                                            <b>Group: {{ $project->group_name }}</b>
+                                        <div class="project-subtitle-2">  
+                                            Group: <b style="font-weight: 700; color:#495057"> {{ $project->group_name }}</b>
                                         </div>
                                         @else
                                         <h4 class="project-title-2">No project yet</h4>

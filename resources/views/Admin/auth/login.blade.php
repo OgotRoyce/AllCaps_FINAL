@@ -26,6 +26,12 @@
 
 </head>
 <style>
+        body {
+        background-image: url("/images/allcapsbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     .form_container {
         margin-top: 150px;
         width: 30%;
@@ -42,7 +48,7 @@
             0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
             0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
         border-radius: 11px;
-        font-family: "Inter", sans-serif;
+        font-family: "Poppins", sans-serif;
     }
     .logo_container {
         box-sizing: border-box;
@@ -59,10 +65,11 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
+        font-family: "Poppins", sans-serif;
     }
     .title {
         margin: 0;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 700;
         color: #212121;
     }
@@ -92,6 +99,7 @@
         font-size: 0.75rem;
         color: #8B8E98;
         font-weight: 600;
+        font-family: "Poppins", sans-serif;
     }
     .input_field {
         width: auto;
@@ -164,8 +172,9 @@
         border: 0;
         background-color: #e8e8e8;
     }
+
     .text_primary {
-        /* font-size: 0.75rem; */
+        font-size: 1.15rem;
         color: #ff6600;
     }
     .note {
@@ -176,6 +185,13 @@
     .form-check{
        margin-right: 60%;
     }
+    /* .form-check-input{
+        color: #ff6600 !important;
+    } */
+    .form-check-input:checked {
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
 </style>
 
 <body>   
@@ -187,13 +203,14 @@
             <img src="path/to/image.jpg" alt="allcaps logo">
         </div> -->
         <div class="text-center mt-2">
-            <h5 class="text_primary">Welcome Admin!</h5>
+            <h5 class="text_primary">Welcome <b style="font-weight: 700;">Admin!</b></h5>
         </div>
         <div class="title_container">
             <p class="title">Login to your Account</p>
         </div>
+
         @if (session('warning'))
-    <div id="warning-message" class="alert alert-danger" align="center" style="width: 100%">
+    <div id="warning-message" class="alert alert-danger"  style="align:center; width: 100%">
         {{ session('warning') }}
     </div>
 @endif
@@ -249,11 +266,13 @@
             </script>
 
         <button title="Sign In" type="submit" class="sign-in_btn">
-            <span>Sign In</span>
+            <span>SIGN IN</span>
         </button>
 
         <div class="separator">
             <hr class="line">
+        </div>
+        
 
     </form>
 
