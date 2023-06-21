@@ -27,6 +27,8 @@
 </head>
 <style>
     body {
+                     /* for hostinger */
+        /* background-image: url("/allcaps/public/images/allcapsbg.jpg");   */
         background-image: url("/images/allcapsbg.jpg");
         background-size: cover;
         background-repeat: no-repeat;
