@@ -178,7 +178,7 @@
                             <div class="d-flex align-items-center">
                                 <img class="avatar" src="{{ asset('pictures/' . $user->photo) }}" alt="Avatar" />
                                 <div class="card-title"><b>{{ $user->first_name }} {{ $user->last_name }}</b> applied to
-                                    your Advisoree.</div>
+                                    your Advisee.</div>
                             </div>
                             <div class="d-flex">
                                 <a onclick="event.preventDefault(); Accepted('{{ $user->id }}')"

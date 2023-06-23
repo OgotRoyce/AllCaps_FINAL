@@ -219,7 +219,7 @@ date_default_timezone_set('Asia/Manila');
 
                             <li class="nav-item">
                                 <a class="nav-link menu-link text-white" href="{{ route('advisoree') }}">
-                                    <i class="ri-team-fill"></i> <span data-key="t-dashboards">Advisoree</span>
+                                    <i class="ri-team-fill"></i> <span data-key="t-dashboards">Advisee</span>
                                 </a>
                             </li>
 
